@@ -21,6 +21,10 @@
         color: #333;
       }
 
+      .main-content {
+        text-align: center;
+      }
+
       .container {
         text-align: center;
         padding: 2rem;
@@ -69,20 +73,27 @@
 
       .privacy-link {
         display: inline-block;
-        color: #667eea;
+        color: rgba(255, 255, 255, 0.9);
         text-decoration: none;
         font-size: 0.9rem;
-        border: 2px solid #667eea;
         padding: 0.5rem 1rem;
-        border-radius: 25px;
         transition: all 0.3s ease;
+        font-weight: 500;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
       }
 
       .privacy-link:hover {
-        background-color: #667eea;
         color: white;
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        text-decoration: underline;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      .links-container {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
       }
 
       .footer {
@@ -112,20 +123,35 @@
           width: 100px;
           height: 100px;
         }
+
+        .links-container {
+          gap: 1rem;
+        }
+
+        .privacy-link {
+          font-size: 0.8rem;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <img src="art/turnix_icon.jpg" alt="Turnix Logo" class="logo" />
-      <h1>Turnix</h1>
-      <p class="tagline">Pattern Matching Puzzle Game</p>
-      <p class="description">
-        Challenge your mind with Turnix, an engaging puzzle matching game that
-        will test your pattern recognition skills and strategic thinking. Match,
-        solve, and enjoy hours of brain-teasing fun!
-      </p>
-      <a href="privacy-policy.html" class="privacy-link">Privacy Policy</a>
+    <div class="main-content">
+      <div class="container">
+        <img src="art/turnix_icon.jpg" alt="Turnix Logo" class="logo" />
+        <h1>Turnix</h1>
+        <p class="tagline">Pattern Matching Puzzle Game</p>
+        <p class="description">
+          Challenge your mind with Turnix, an engaging puzzle matching game that
+          will test your pattern recognition skills and strategic thinking.
+          Match, solve, and enjoy hours of brain-teasing fun!
+        </p>
+      </div>
+
+      <div class="links-container">
+        <a href="privacy-policy.html" class="privacy-link">Privacy Policy</a>
+        <a href="terms-and-conditions.html" class="privacy-link">Terms & Conditions</a>
+        <a href="support.html" class="privacy-link">Support</a>
+      </div>
     </div>
 
     <footer class="footer">

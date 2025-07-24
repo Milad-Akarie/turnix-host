@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support - Turnix</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333;
+        padding: 2rem 1rem;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        width: 100%;
+        padding: 3rem;
+        text-align: center;
+      }
+
+      .back-link {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .back-link:hover {
+        color: white;
+        text-decoration: underline;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #4a5568;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .subtitle {
+        font-size: 1.1rem;
+        color: #718096;
+        margin-bottom: 3rem;
+        font-weight: 500;
+      }
+
+      .support-section {
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        text-align: left;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .support-section h2 {
+        font-size: 1.3rem;
+        color: #4a5568;
+        margin-bottom: 1rem;
+        font-weight: 600;
+      }
+
+      .support-section p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #4a5568;
+      }
+
+      .contact-link {
+        color: #667eea;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .contact-link:hover {
+        color: #5a67d8;
+        text-decoration: underline;
+      }
+
+      .address {
+        white-space: pre-line;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 2rem;
+          margin: 1rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .back-link {
+          top: 1rem;
+          left: 1rem;
+          font-size: 0.8rem;
+        }
+
+        .support-section {
+          padding: 1.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        .subtitle {
+          font-size: 1rem;
+        }
+
+        .support-section {
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html" class="back-link">← Back to Home</a>
+
+    <div class="container">
+      <h1>Turnix Support</h1>
+      <p class="subtitle">
+        We're here to help you with any questions or issues you might have.
+      </p>
+
+      <div class="support-section">
+        <h2>Email Support</h2>
+        <p>
+          Email us at
+          <a href="mailto:support@codeness.ly" class="contact-link"
+            >support@codeness.ly</a
+          >
+          and we'll get back to you as soon as possible.
+        </p>
+      </div>
+
+      <div class="support-section">
+        <h2>Phone Support</h2>
+        <p>
+          Call us at
+          <a href="tel:+905013671358" class="contact-link">+90 (501) 3671358</a>
+          to speak with a representative.
+        </p>
+      </div>
+
+      <div class="support-section">
+        <h2>Address</h2>
+        <p class="address">
+          Visit us at our office at Birlik mah. 463 sk. 32/5 Çankaya/Ankara,
+          Turkey
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
